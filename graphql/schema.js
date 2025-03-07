@@ -4,7 +4,7 @@ const schema = buildSchema(
     `
     type Query {
         message: String
-        data : [idc_btt]
+        data(limit: Int, page: Int) : [idc_btt]
     }
 
     type idc_btt {

@@ -1,3 +1,7 @@
-require('dotenv').config();
+const test_args = (args) => {
+    const { limit , page } = args;
+    console.log( limit, page );
+}
 
-console.log(process.env.MSSQL_DB);
+
+test_args({limit: 10, page:1})
